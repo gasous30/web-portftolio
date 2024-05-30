@@ -30,10 +30,10 @@ const Navbar = () => {
         </Heading>
         <Flex alignItems={"center"}>
           <HStack spacing={7}>
-            <Button as={"a"} variant={"ghost"} href={"#projects"}>
+            <Button as={"a"} variant={"ghost"} href={"/#projects"}>
               Projects
             </Button>
-            <Button as={"a"} variant={"ghost"} href={"#education"}>
+            <Button as={"a"} variant={"ghost"} href={"/#education"}>
               Education
             </Button>
             <Popover>
@@ -45,10 +45,10 @@ const Navbar = () => {
               <PopoverContent>
                 <PopoverBody>
                   <Center flexDir={"column"}>
-                    <Button as={"a"} variant={"ghost"} href={"#workExp"}>
+                    <Button as={"a"} variant={"ghost"} href={"/#workExp"}>
                       Work Experience
                     </Button>
-                    <Button as={"a"} variant={"ghost"} href={"#orgExp"}>
+                    <Button as={"a"} variant={"ghost"} href={"/#orgExp"}>
                       Organizational Experience
                     </Button>
                   </Center>

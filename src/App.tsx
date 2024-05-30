@@ -9,6 +9,31 @@ import WorkExp from "./components/WorkExp";
 import ScrollToTop from "./components/ScrollToTop";
 import OrgExp from "./components/OrgExp";
 import Education from "./components/Education";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ProjectPage from "./components/ProjectsPage";
+
+const Root = () => {
+  return (
+    <>
+      <About />
+      <Projects />
+      <Education />
+      <WorkExp />
+      <OrgExp />
+    </>
+  );
+};
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+  },
+  {
+    path: "/projects/:projectId",
+    element: <ProjectPage />,
+  },
+]);
 
 function App() {
   return (
@@ -17,11 +42,7 @@ function App() {
         <Navbar />
       </header>
       <main>
-        <About />
-        <Projects />
-        <Education />
-        <WorkExp />
-        <OrgExp />
+        <RouterProvider router={router} />
       </main>
       <ScrollToTop />
       <Footer />

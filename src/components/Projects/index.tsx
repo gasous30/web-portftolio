@@ -22,12 +22,13 @@ import {
   SiScikitlearn,
 } from "react-icons/si";
 
-interface ProjectContainerModel {
+export interface ProjectContainerModel {
   title: string;
   description: string;
   tag: string;
   tech: string[];
   link?: string;
+  children?: JSX.Element;
 }
 
 interface ProjectContainer {
@@ -46,7 +47,9 @@ const ProjectContainer = (props: ProjectContainer) => {
       cursor={"pointer"}
       transition={"transform .2s"}
       _hover={{ transform: "scale(1.05)" }}
-      onClick={() => (data.link ? window.open(data.link) : null)}
+      onClick={() =>
+        window.open(data.link ? data.link : "projects/" + data.title)
+      }
     >
       <Heading as={"h3"} size={"md"}>
         {data.title}

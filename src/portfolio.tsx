@@ -1,3 +1,5 @@
+import { Text } from "@chakra-ui/react";
+
 const about = {
   name: "Octavianus Bagaswara Adi",
   description:
@@ -33,6 +35,7 @@ const projects = [
       "An application-based food detection and calculator system, provide nutrient values, and assist users in calculating their daily nutrition needs.",
     tag: "Machine Learning",
     tech: ["Python", "Tensorflow"],
+    link: "https://www.canva.com/design/DAF5c_V7JuM/aexO7xfGBG8Cfn3mHUv-WQ/view?utm_content=DAF5c_V7JuM&utm_campaign=designshare&utm_medium=link&utm_source=editor",
   },
   {
     title: "Web Based Application Wind Turbine Damage Detection",
@@ -40,6 +43,7 @@ const projects = [
       "An application-based damage detection occurring on conventional wind turbine blades using Object Detection.",
     tag: "Machine Learning",
     tech: ["React", "Typescript", "Express", "Python", "Tensorflow"],
+    link: "https://itbdsti-my.sharepoint.com/:p:/g/personal/13620059_mahasiswa_itb_ac_id/EX1GYWtQGstNt-7neDTdjg0Bh6iDaJA1HVOYOBBSvbNTCQ?e=qT6VCf",
   },
   {
     title: "Chatbot Application for Helping Covid-19 Patients",
@@ -47,6 +51,7 @@ const projects = [
       "An interactive chatbot to aid users in locating the nearest plasma and vaccination centers based on their current location.",
     tag: "Data",
     tech: ["React", "Express", "Twilio", "Mongodb"],
+    link: "https://www.canva.com/design/DAEvW0rgfrg/hJslN38m12A4wAOcxVmhNA/view?utm_content=DAEvW0rgfrg&utm_campaign=designshare&utm_medium=link&utm_source=editor",
   },
   {
     title: "Fandango Movie Rating Discrepancy Analysis",
@@ -105,6 +110,32 @@ const projects = [
     tag: "Engineering",
     tech: ["Matlab", "Simulink"],
     link: "https://ieeexplore.ieee.org/document/10329891",
+  },
+  {
+    title:
+      "Optimization of Electrical Energy Production with Automatic Resonance Frequency Adjustment on Vortex Shedding Turbine using a Fluid-Structure Interaction Approach",
+    description:
+      "Optimization of electrical energy production through automatic resonance frequency adjustment in vortex shedding turbines, employing a fluid-structure interaction approach to enhance efficiency and performance in renewable energy systems.",
+    tag: "Engineering",
+    tech: ["Matlab"],
+    link: "https://www.canva.com/design/DAFwCZHN2PA/-6-928qEBOy9AoSXFVJ1HQ/view?utm_content=DAFwCZHN2PA&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+  },
+  {
+    title:
+      "Static Load Analysis of Scissor Lift on High Catering Truck using Finite Element Method",
+    description:
+      "Static load analysis of a scissor lift on a high catering truck using the finite element method to assess structural integrity, ensure safety, and optimize design for enhanced performance and reliability.",
+    tag: "Engineering",
+    tech: ["Abacus"],
+    link: "https://www.canva.com/design/DAFjQ_WMAzc/bvr3mk-QsebIfjppFtOmtA/view?utm_content=DAFjQ_WMAzc&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+  },
+  {
+    title: "Conceptual Design of Urban Air Mobility (UAM) Aircraft",
+    description:
+      "Designed LIG-MB eVTOL UAM aircraft, a sustainable, 4-passenger electric vehicle designed for urban air mobility. It complies with FAA and FATO regulations, featuring VTOL capability, autonomous flight, and advanced safety systems for efficient and eco-friendly transportation.",
+    tag: "Engineering",
+    tech: ["Matlab", "Excel", "Solidworks", "DATCOM"],
+    link: "https://www.canva.com/design/DAF2TY5GQeI/75SRwO4EvqIeMfGJXrNw9Q/view?utm_content=DAF2TY5GQeI&utm_campaign=designshare&utm_medium=link&utm_source=editor",
   },
 ];
 
