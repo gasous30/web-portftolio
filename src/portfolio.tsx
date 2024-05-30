@@ -1,5 +1,3 @@
-import { Text } from "@chakra-ui/react";
-
 const about = {
   name: "Octavianus Bagaswara Adi",
   description:
@@ -25,6 +23,13 @@ const education = [
     description:
       "Learn about principle of microeconomics and contemporary society and marketing",
     year: "2024",
+  },
+  {
+    title: "Bangkit Academy by Google, GoTo, and Traveloka",
+    subtitle: "Machine Learning Cohort",
+    description:
+      "Learn about data analytics, fundamental mathematics for machine learning, practical TensorFlow application, and advanced machine learning and deep learning techniques.",
+    year: "2023 - 2024",
   },
 ];
 

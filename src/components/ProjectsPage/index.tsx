@@ -1,10 +1,10 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
-import { projects } from "../../portfolio";
+// import { projects } from "../../portfolio";
 
 const ProjectPage = () => {
   const { projectId } = useParams();
-  const data = projects.find((x) => x.title == projectId);
+  // const data = projects.find((x) => x.title == projectId);
   return (
     <Flex
       flexDir={"column"}

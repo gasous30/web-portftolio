@@ -21,21 +21,21 @@ const About = () => {
       </Heading>
       <Text maxW={"70%"}>{about.description}</Text>
       <HStack spacing={4} justifyContent={"center"}>
-        <Button
+        {/* <Button
           as={"a"}
           variant={"outline"}
           href={about.resume}
           target={"_blank"}
         >
           Resume
-        </Button>
+        </Button> */}
         <Button
           as={"a"}
           variant={"link"}
           href={about.social.github}
           target={"_blank"}
         >
-          <Icon as={FaGithub} boxSize={"1.5em"} />
+          <Icon as={FaGithub} boxSize={10} />
         </Button>
         <Button
           as={"a"}
@@ -43,7 +43,7 @@ const About = () => {
           href={about.social.linkedin}
           target={"_blank"}
         >
-          <Icon as={FaLinkedin} boxSize={"1.5em"} />
+          <Icon as={FaLinkedin} boxSize={10} />
         </Button>
       </HStack>
     </Flex>
