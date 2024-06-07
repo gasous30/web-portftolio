@@ -6,6 +6,7 @@ const about = {
   social: {
     linkedin: "https://www.linkedin.com/in/octavianusbagas/",
     github: "https://github.com/gasous30",
+    mail: "mailto:octavianus.bagaswara@gmail.com",
   },
 };
 
@@ -13,22 +14,25 @@ const education = [
   {
     title: "Bachelor of Engineering in Aerospace Engineering",
     subtitle: "Institut Teknologi Bandung, Indonesia",
-    description:
+    description: [
       "Learn about design, construction, and science of aircraft and spacecraft.",
+    ],
     year: "2020 - 2024 (expected)",
   },
   {
     title: "Hanyang International Winter School",
     subtitle: "Hanyang University",
-    description:
+    description: [
       "Learn about principle of microeconomics and contemporary society and marketing",
+    ],
     year: "2024",
   },
   {
     title: "Bangkit Academy by Google, GoTo, and Traveloka",
     subtitle: "Machine Learning Cohort",
-    description:
+    description: [
       "Learn about data analytics, fundamental mathematics for machine learning, practical TensorFlow application, and advanced machine learning and deep learning techniques.",
+    ],
     year: "2023 - 2024",
   },
 ];
@@ -148,15 +152,20 @@ const workExperience = [
   {
     title: "Front End Web Developer",
     subtitle: "Internnet Indonesia",
-    description:
-      "Developed websites for Internnet Indonesia Wave 5 using the Next framework and a content management system using the Vite framework.",
+    description: [
+      "Developed websites for Internnet Indonesia Wave 5 using the Next framework.",
+      "Developed content management system website for Internnet Indonesia by using Vite framework.",
+    ],
     year: "Nov 2021 - Oct 2023",
   },
   {
     title: "On the Job Training Aerodynamics Engineer",
     subtitle: "PT Dirgantara Indonesia",
-    description:
-      "Analyzed and evaluated the accuracy, strengths, and limitations of aerodynamic software tools, including VSPAERO and ANSYS Fluent, in calculating lift and drag forces on a wing, providing valuable insights into their performance and applicability for reliable and precise aerodynamic calculations.",
+    description: [
+      "Analyzed several aerodynamic software tools, including VSPAERO and ANSYS Fluent, to calculate the lift and drag forces on a wing",
+      "Assessed the strengths and limitations of VSPAERO and ANSYS Fluent in estimating lift and drag forces, providing valuable insights into their performance and applicability",
+      "Evaluated the accuracy of VSPAERO and ANSYS Fluent in predicting lift and drag forces, ensuring reliable and precise aerodynamic calculations for wing designs.",
+    ],
     year: "Jun - Jul 2023",
   },
 ];
@@ -165,30 +174,37 @@ const orgExperience = [
   {
     title: "Vice President",
     subtitle: "Tanoto Scholars Association (TSA) ITB",
-    description:
-      "Facilitated the supervision of six divisions, achieving recognition for the best project showcase among nine Tanoto Scholars Association accros Indonesia, and guided four social projects in collaboration with the Tanoto Foundation to fulfill beneficiary needs.",
+    description: [
+      "Assisted the president in supervising six divisions, totaling 40 members, to execute social projects aligned with SDGs.",
+      "Attained recognition for the best project showcase among nine Tanoto Scholars Association across Indonesia.",
+      "Guided four social projects to fulfill beneficiary needs through collaboration with the Tanoto Foundation.",
+    ],
     year: "Dec 2022 - Dec 2023",
   },
   {
     title: "Media, Communication, and Information Staff Web Division",
     subtitle: "KMPN ITB",
-    description:
-      "Developed a website for KMPN (Keluarga Mahasiswa Teknik Penerbangan) using the React framework and a headless CMS by integrating WordPress and React.",
+    description: [
+      "Developed a website for KMPN (Keluarga Mahasiswa Teknik Penerbangan) using the React framework",
+      "Developing headless CMS for KMPN by integrating WordPress and React.",
+    ],
     year: "Jun 2022 - Apr 2023",
   },
   {
     title:
       "KMPN UAV Development Team (KUDT) Systems Department AI Division Staff",
     subtitle: "KMPN ITB",
-    description:
+    description: [
       "Make a pathfinding algorithm for UAV based on the regulations and avoiding high buildings such as cell tower, skyscraper, etc.",
+    ],
     year: "Sept - Dec 2022",
   },
   {
     title: "UAV Design Engineer at Racing Plane Division",
     subtitle: "Aksantara ITB",
-    description:
+    description: [
       "Designed a racing UAV optimized to achieve the most laps within 3 minutes on a figure-8 track, analyzed its aerodynamics, and calculated its performance.",
+    ],
     year: "Mar 2021 - Jan 2023",
   },
 ];

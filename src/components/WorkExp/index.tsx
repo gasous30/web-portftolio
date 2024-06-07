@@ -6,13 +6,15 @@ import {
   Tag,
   Text,
   Divider,
+  UnorderedList,
+  ListItem,
 } from "@chakra-ui/react";
 import { workExperience } from "../../portfolio";
 
 export interface WorkExpContainerModel {
   title: string;
   subtitle: string;
-  description: string;
+  description: string[];
   year: string;
 }
 
@@ -32,7 +34,11 @@ const WorkExpContainer = (props: WorkExpContainerProps) => {
         <Tag>{modelData.year}</Tag>
       </Flex>
       <Text textAlign={"left"} w={"80%"}>
-        {modelData.description}
+        <UnorderedList>
+          {modelData.description.map((val: string, _) => (
+            <ListItem>{val}</ListItem>
+          ))}
+        </UnorderedList>
       </Text>
     </Flex>
   );
