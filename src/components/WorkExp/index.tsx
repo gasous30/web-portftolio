@@ -34,11 +34,15 @@ const WorkExpContainer = (props: WorkExpContainerProps) => {
         <Tag>{modelData.year}</Tag>
       </Flex>
       <Text textAlign={"left"} w={"80%"}>
-        <UnorderedList>
-          {modelData.description.map((val: string, _) => (
-            <ListItem>{val}</ListItem>
-          ))}
-        </UnorderedList>
+        {modelData.description.length > 1 ? (
+          <UnorderedList>
+            {modelData.description.map((val: string, _) => (
+              <ListItem>{val}</ListItem>
+            ))}
+          </UnorderedList>
+        ) : (
+          <Text>{modelData.description[0]}</Text>
+        )}
       </Text>
     </Flex>
   );

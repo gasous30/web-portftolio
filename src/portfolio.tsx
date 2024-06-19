@@ -203,10 +203,87 @@ const orgExperience = [
     title: "UAV Design Engineer at Racing Plane Division",
     subtitle: "Aksantara ITB",
     description: [
-      "Designed a racing UAV optimized to achieve the most laps within 3 minutes on a figure-8 track, analyzed its aerodynamics, and calculated its performance.",
+      "Designed a racing UAV optimized to achieve the most laps within 3 minutes on a figure-8 track",
+      "Analyzed a racing UAV's aerodynamics using XFLR 5",
+      "Calculated performance of a racing UAV",
     ],
     year: "Mar 2021 - Jan 2023",
   },
 ];
 
-export { about, education, projects, workExperience, orgExperience };
+const achievement = [
+  {
+    title:
+      "1st Place in Scientific Writing and Prototyping Competition at Milezero Project 2.0",
+    subtitle: "Issued by IEEE ITB",
+    description: [
+      "I, along with the team, have developed an application that can be used to detect damage occurring on conventional wind turbine blades using Object Detection. Once detected, the program will connect to a simulation created with Simulink (MATLAB) and calculate the amount of power lost. Subsequently, the program will output the losses incurred if repairs are not carried out. In this program, my role involves creating the Object Detection function using Tensorflow and designing the UI/UX with ReactJS, as well as integrating Python and MATLAB.",
+    ],
+    year: "Mar 2022",
+  },
+  {
+    title: "3rd Place in Mathematical Modelling Competition",
+    subtitle: "Issued by Himpunan Mahasiswa Matematika ITB",
+    description: [
+      "My team and I have developed a mathematical model used to calculate the profits and revenue of a company based on various variables that have arisen as a result of the COVID-19 pandemic.",
+    ],
+    year: "Mar 2022",
+  },
+  {
+    title: "1st Place in Scientific Writing Competition at EBOTEC #11",
+    subtitle: "Issued by FMIPA UGM",
+    description: [
+      "My team and I have created a chatbot designed to help users find the closest plasma center based on their current location. This application is integrated with WhatsApp using the Twilio API.",
+    ],
+    year: "Nov 2021",
+  },
+  {
+    title:
+      "3rd Place in Kontes Robot Terbang Indonesia (KRTI) Racing Plane Division",
+    subtitle: "Issued by Pusat Prestasi Nasional",
+    description: [
+      "Our team won 3rd place in the Kontes Robot Terbang Indonesia (KRTI) Racing Plane Division by designing a UAV that completed the most laps on an 8-figure track within 3 minutes.",
+    ],
+    year: "Nov 2021",
+  },
+  {
+    title: "TELADAN Leadership Program Awardee",
+    subtitle: "Issued by Tanoto Foundation",
+    description: [
+      "Selected as one of the 150 TELADAN scholarship awardees from a pool of 10,895 applicants across nine partner universities in Indonesia. The TELADAN program offers a comprehensive package, including a full scholarship and leadership development training, with the goal of nurturing future leaders.",
+    ],
+    year: "Jan 2021",
+  },
+];
+
+const certification = [
+  {
+    title: "TensorFlow Developer Certificate",
+    subtitle: "TensorFlow Certificate Program",
+    issued: "Mar 2024",
+    expired: "Mar 2027",
+    credID: "98824562",
+    credLink: "https://www.credential.net/0f70d965-2cca-46c4-ad61-88c689452fc3",
+    description:
+      "This Level One certification exam evaluates a developer's foundational knowledge in integrating machine learning into tools and applications. It covers building TensorFlow models using Computer Vision, Convolutional Neural Networks, Natural Language Processing, and strategies for handling real-world image data.",
+  },
+  {
+    title: "Mechanical Design at the level of ASSOCIATE using SOLIDWORKS",
+    subtitle: "Dassault Systèmes",
+    issued: "Jul 2021",
+    credID: "C-VCSWHU8M7A",
+    credLink: "https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-VCSWHU8M7A",
+    description:
+      "Achieved Associate-level certification in Mechanical Design using SOLIDWORKS, earning a perfect score. This certification demonstrates proficiency in creating and analyzing mechanical components and assemblies using SOLIDWORKS, showcasing skills in 3D modeling, design principles, and simulation techniques.",
+  },
+];
+
+export {
+  about,
+  education,
+  projects,
+  workExperience,
+  orgExperience,
+  achievement,
+  certification,
+};

@@ -8,6 +8,7 @@ import {
   Text,
   Divider,
   Icon,
+  Button,
 } from "@chakra-ui/react";
 import { projects } from "../../portfolio";
 import {
@@ -23,6 +24,7 @@ import {
   SiMicrosoftexcel,
   SiCoreldraw,
 } from "react-icons/si";
+import { useState } from "react";
 
 export interface ProjectContainerModel {
   title: string;
@@ -144,6 +146,18 @@ const ProjectContainer = (props: ProjectContainer) => {
 };
 
 const Projects = () => {
+  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+
+  projects.sort((a, b) => (a.tag < b.tag ? -1 : 1));
+
+  const handleTagClick = (tag: string) => {
+    setSelectedTag((x) => (x === tag ? null : tag));
+  };
+
+  const projectsFiltered = selectedTag
+    ? projects.filter((project) => project.tag.toLowerCase() === selectedTag)
+    : projects;
+
   return (
     <Flex
       id={"project"}
@@ -159,8 +173,38 @@ const Projects = () => {
         Projects
       </Heading>
       <Divider borderWidth={1} />
+      <Center gap={5}>
+        <Button
+          colorScheme={
+            selectedTag === "data" || selectedTag === null ? "teal" : "gray"
+          }
+          onClick={() => handleTagClick("data")}
+        >
+          Data
+        </Button>
+        <Button
+          colorScheme={
+            selectedTag === "machine learning" || selectedTag === null
+              ? "teal"
+              : "gray"
+          }
+          onClick={() => handleTagClick("machine learning")}
+        >
+          Machine Learning
+        </Button>
+        <Button
+          colorScheme={
+            selectedTag === "engineering" || selectedTag === null
+              ? "teal"
+              : "gray"
+          }
+          onClick={() => handleTagClick("engineering")}
+        >
+          Engineering
+        </Button>
+      </Center>
       <Grid templateColumns="repeat(3, 1fr)" gap={5} w={"100%"}>
-        {projects.map((val: ProjectContainerModel, _) => (
+        {projectsFiltered.map((val: ProjectContainerModel, _) => (
           <ProjectContainer data={val} />
         ))}
       </Grid>

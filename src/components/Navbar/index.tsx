@@ -33,6 +33,9 @@ const Navbar = () => {
             <Button as={"a"} variant={"ghost"} href={"/#projects"}>
               Projects
             </Button>
+            <Button as={"a"} variant={"ghost"} href={"/#certification"}>
+              Certification
+            </Button>
             <Button as={"a"} variant={"ghost"} href={"/#education"}>
               Education
             </Button>
@@ -50,6 +53,28 @@ const Navbar = () => {
                     </Button>
                     <Button as={"a"} variant={"ghost"} href={"/#orgExp"}>
                       Organizational Experience
+                    </Button>
+                  </Center>
+                </PopoverBody>
+              </PopoverContent>
+            </Popover>
+            <Button as={"a"} variant={"ghost"} href={"/#achievement"}>
+              Achievement
+            </Button>
+            <Popover>
+              <PopoverTrigger>
+                <Button as={"a"} variant={"ghost"} cursor={"pointer"}>
+                  TELADAN
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent>
+                <PopoverBody>
+                  <Center flexDir={"column"}>
+                    <Button as={"a"} variant={"ghost"} href={"/TELADAN/About"}>
+                      About TELADAN
+                    </Button>
+                    <Button as={"a"} variant={"ghost"} href={"/TELADAN/PP"}>
+                      Professional Preparation Program
                     </Button>
                   </Center>
                 </PopoverBody>

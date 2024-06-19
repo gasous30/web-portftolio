@@ -11,29 +11,52 @@ import OrgExp from "./components/OrgExp";
 import Education from "./components/Education";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProjectPage from "./components/ProjectsPage";
+import Achievement from "./components/Achievement";
+import Certification from "./components/Certification";
+import Teladan from "./components/TELADAN";
+import PPProg from "./components/PPProg";
 
 const Root = () => {
   return (
     <>
       <About />
       <Projects />
+      <Certification />
       <Education />
       <WorkExp />
       <OrgExp />
+      <Achievement />
     </>
   );
 };
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-  },
-  {
-    path: "/projects/:projectId",
-    element: <ProjectPage />,
-  },
-]);
+const router = createBrowserRouter(
+  [
+    // {
+    //   path: "*",
+    //   element: <Navigate to="/" />,
+    // },
+    {
+      path: "/",
+      element: <Root />,
+    },
+    {
+      path: "/projects/:projectId",
+      element: <ProjectPage />,
+    },
+    {
+      path: "/TELADAN/About",
+      element: <Teladan />,
+    },
+    {
+      path: "/TELADAN/PP",
+      element: <PPProg />,
+    },
+  ]
+  // {
+  //   basename: "/app",
+  // }
+);
 
 function App() {
   return (
