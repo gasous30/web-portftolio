@@ -1,7 +1,10 @@
+import data_professional_survey from "./assets/Data_Professional_Survey_Breakdown.pdf";
+import hr_analytics from "./assets/hr_analytics_dashboard.pdf";
+
 const about = {
   name: "Octavianus Bagaswara Adi",
   description:
-    "I am an Aerospace Engineering undergraduate student with a deep passion for Data Analysis, Machine Learning, and Web Development. As I near the completion of my undergraduate program, I am driven to explore these dynamic fields to foster innovation within the aerospace industry and beyond. My experience includes proficiency in TensorFlow for Image Classification and Object Detection, as well as using MATLAB, Simulink, and Python for Data Analysis and Aerospace Simulation. Additionally, my previous projects have honed my project management, time management, and stress management skills.",
+    "As a graduate from Aerospace Engineering at Institut Teknologi Bandung, my journey has been marked by a commitment to intertwining technical expertise with societal impact. The recent completion of a project at Bangkit Academy, earning a spot in the top 50 out of 639, highlighted my ability to leverage machine learning tools like TensorFlow to create meaningful solutions. In parallel, my tenure as Vice President at TSA ITB was defined by empowering teams to deliver social projects that resonate with the Sustainable Development Goals; a testament to my leadership and dedication to driving positive change. Our collaboration with the Tanoto Foundation was fundamental in steering successful initiatives, showcasing my capabilities in project management and social responsibility.",
   resume: "",
   social: {
     linkedin: "https://www.linkedin.com/in/octavianusbagas/",
@@ -15,6 +18,7 @@ const education = [
     title: "Bachelor of Engineering in Aerospace Engineering",
     subtitle: "Institut Teknologi Bandung, Indonesia",
     description: [
+      "Published 1 article at Jurnal Kewarganegaraan and 2 conference papers at the IEEE International Conference on Aerospace Electronics and Remote Sensing Technology (ICARES).",
       "Learn about design, construction, and science of aircraft and spacecraft.",
     ],
     year: "2020 - 2024 (expected)",
@@ -31,6 +35,8 @@ const education = [
     title: "Bangkit Academy by Google, GoTo, and Traveloka",
     subtitle: "Machine Learning Cohort",
     description: [
+      "Achieved recognition among the top 50 product-based capstone projects out of 639 entries.",
+      "Developed FONA: Food Nutrition Assistant, an application with 5 features designed to help users calculate theirdaily nutritional requirements.",
       "Learn about data analytics, fundamental mathematics for machine learning, practical TensorFlow application, and advanced machine learning and deep learning techniques.",
     ],
     year: "2023 - 2024",
@@ -58,9 +64,33 @@ const projects = [
     title: "Chatbot Application for Helping Covid-19 Patients",
     description:
       "An interactive chatbot to aid users in locating the nearest plasma and vaccination centers based on their current location.",
-    tag: "Data",
+    tag: "Machine Learning",
     tech: ["React", "Express", "Twilio", "Mongodb"],
     link: "https://www.canva.com/design/DAEvW0rgfrg/hJslN38m12A4wAOcxVmhNA/view?utm_content=DAEvW0rgfrg&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+  },
+  {
+    title: "Flight Delay Dashboard in US",
+    description:
+      "An interactive dashboard for flight delay in US from January 2017 to July 2022",
+    tag: "Data",
+    tech: ["Tableau"],
+    link: "https://public.tableau.com/shared/2T5TF9MK3?:display_count=n&:origin=viz_share_link",
+  },
+  {
+    title: "HR Analytics Dashboard",
+    description:
+      "An interactive dashboard developed using Power BI aims to provide insights into various aspects of human resources within an organization.",
+    tag: "Data",
+    tech: ["PowerBI"],
+    link: hr_analytics,
+  },
+  {
+    title: "Data Professional Survey Dashboard",
+    description:
+      "An interactive dashboard developed using Power BI aims to provide insights into data professional.",
+    tag: "Data",
+    tech: ["PowerBI"],
+    link: data_professional_survey,
   },
   {
     title: "Fandango Movie Rating Discrepancy Analysis",
@@ -88,11 +118,12 @@ const projects = [
   },
   {
     title:
-      "Design and Implementation of Hardware-In-The-Loop Simulation for Thrust Vectoring Controlled Rocket",
+      "Hardware-In-The-Loop Simulation Analysis on Thrust Vectoring Control Design for Ducted Fan UAV",
     description:
       "A MATLAB-based tool was designed and implemented using HILS for a TVC vehicle, introducing a new approach to flight control system design.",
     tag: "Engineering",
     tech: ["Matlab", "Simulink"],
+    link: "https://digilib.itb.ac.id/gdl/view/81873/13620059?rows=1&per_page=2",
   },
   {
     title:

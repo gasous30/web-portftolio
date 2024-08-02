@@ -23,6 +23,8 @@ import {
   SiScikitlearn,
   SiMicrosoftexcel,
   SiCoreldraw,
+  SiPowerbi,
+  SiTableau,
 } from "react-icons/si";
 import { useState } from "react";
 
@@ -136,6 +138,10 @@ const ProjectContainer = (props: ProjectContainer) => {
               return <SimulinkIcon boxSize={6} />;
             case "Abacus":
               return <SWIcon boxSize={6} />;
+            case "PowerBI":
+              return <Icon as={SiPowerbi} boxSize={6} />;
+            case "Tableau":
+              return <Icon as={SiTableau} boxSize={6} />;
             default:
               return <Heading size={"sm"}>{val}</Heading>;
           }

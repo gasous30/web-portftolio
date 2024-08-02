@@ -40,7 +40,9 @@ const About = () => {
         <Heading as={"h2"} size={"xl"}>
           A data enthusiast.
         </Heading>
-        <Text maxW={"70%"}>{about.description}</Text>
+        <Text textAlign={"left"} maxW={"70%"}>
+          {about.description}
+        </Text>
         <HStack spacing={4} justifyContent={"center"}>
           {/* <Button
           as={"a"}
