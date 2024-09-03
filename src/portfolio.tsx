@@ -1,5 +1,7 @@
 import data_professional_survey from "./assets/Data_Professional_Survey_Breakdown.pdf";
 import hr_analytics from "./assets/hr_analytics_dashboard.pdf";
+import olist_dashboard from "./assets/brazilian-e-commerce-dashboard-2024-08-05T09-03-42.134Z.jpg";
+import movie_dashboard from "./assets/Movie_Rental_Sales_Dashboard.pdf";
 
 const about = {
   name: "Octavianus Bagaswara Adi",
@@ -44,6 +46,30 @@ const education = [
 ];
 
 const projects = [
+  {
+    title: "Movie Sales Rental Dashboard",
+    description:
+      "An interactive dashboard to analyze key movie rental metrics like sales, rental frequency, customer activity, and top-performing films.",
+    tag: "Data",
+    tech: ["PowerBI"],
+    link: movie_dashboard,
+  },
+  {
+    title: "Tomato Price Analysis",
+    description:
+      "A project aims to explore and analyze the temporal dynamics of tomato prices using a comprehensive dataset spanning from 2014 to 2020.",
+    tag: "Data",
+    tech: ["Statsmodels", "Python"],
+    link: "https://github.com/gasous30/tomato-price/blob/main/analysis.ipynb",
+  },
+  {
+    title: "Olist E-Commerce Dashboard",
+    description:
+      "An interactive dashboard built using Apache Superset and PostgreSQL to analyze key e-commerce metrics like sales, orders, invoice rates, and top product categories.",
+    tag: "Data",
+    tech: ["Superset", "PostgreSQL"],
+    link: olist_dashboard,
+  },
   {
     title: "Food Detection and Nutrition Calculator Application",
     description:
