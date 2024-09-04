@@ -9,6 +9,8 @@ import {
   Divider,
   Icon,
   Button,
+  Image,
+  Spacer,
 } from "@chakra-ui/react";
 import { projects } from "../../portfolio";
 import {
@@ -36,6 +38,7 @@ export interface ProjectContainerModel {
   tech: string[];
   link?: string;
   children?: JSX.Element;
+  photo: string;
 }
 
 interface ProjectContainer {
@@ -209,7 +212,7 @@ const StatsmodelIcon = (props: any) => (
 const ProjectContainer = (props: ProjectContainer) => {
   const data = props.data;
   return (
-    <Center
+    <Flex
       flexDir={"column"}
       p={4}
       m={0}
@@ -221,12 +224,16 @@ const ProjectContainer = (props: ProjectContainer) => {
       onClick={() =>
         window.open(data.link ? data.link : "projects/" + data.title)
       }
+      alignItems={"center"}
     >
+      <Image src={data.photo} h={"40%"} objectFit={"contain"} />
       <Heading as={"h3"} size={"md"}>
         {data.title}
       </Heading>
       <Tag>{data.tag}</Tag>
+      <Spacer />
       <Text>{data.description}</Text>
+      <Spacer />
       <HStack spacing={4}>
         {data.tech.map((val: string, _) => {
           switch (val) {
@@ -275,7 +282,7 @@ const ProjectContainer = (props: ProjectContainer) => {
           }
         })}
       </HStack>
-    </Center>
+    </Flex>
   );
 };
 

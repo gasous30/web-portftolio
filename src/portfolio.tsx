@@ -3,6 +3,25 @@ import hr_analytics from "./assets/hr_analytics_dashboard.pdf";
 import olist_dashboard from "./assets/brazilian-e-commerce-dashboard-2024-08-05T09-03-42.134Z.jpg";
 import movie_dashboard from "./assets/Movie_Rental_Sales_Dashboard.pdf";
 
+import olist_photo from "./assets/projectImages/brazilian-e-commerce-dashboard-2024-08-05T09-03-42.134Z.jpg";
+import data_prof from "./assets/projectImages/data_prof.png";
+import flight_delay from "./assets/projectImages/flight_delay.png";
+import hr_analytics_p from "./assets/projectImages/hr_analytics.png";
+import movie_rental from "./assets/projectImages/movie_rental.png";
+import tomato_price from "./assets/projectImages/tomato_price.png";
+import fandango from "./assets/projectImages/fandango.png";
+import titanic from "./assets/projectImages/titanic.png";
+import aircraft_flight_sds from "./assets/projectImages/aircraft_flight_sds.png";
+import DE_ML from "./assets/projectImages/DE_ML.png";
+import dpu from "./assets/projectImages/dpu.png";
+import FONA from "./assets/projectImages/FONA.png";
+import HILS from "./assets/projectImages/HILS.png";
+import kebal from "./assets/projectImages/kebal.png";
+import rocket_paper from "./assets/projectImages/rocket_paper.png";
+import static_load from "./assets/projectImages/static_load.png";
+import turbiscan from "./assets/projectImages/turbiscan.png";
+import vst_optimization from "./assets/projectImages/vst_optimization.png";
+
 const about = {
   name: "Octavianus Bagaswara Adi",
   description:
@@ -53,6 +72,7 @@ const projects = [
     tag: "Data",
     tech: ["PowerBI"],
     link: movie_dashboard,
+    photo: movie_rental,
   },
   {
     title: "Tomato Price Analysis",
@@ -61,6 +81,7 @@ const projects = [
     tag: "Data",
     tech: ["Statsmodels", "Python"],
     link: "https://github.com/gasous30/tomato-price/blob/main/analysis.ipynb",
+    photo: tomato_price,
   },
   {
     title: "Olist E-Commerce Dashboard",
@@ -69,6 +90,7 @@ const projects = [
     tag: "Data",
     tech: ["Superset", "PostgreSQL"],
     link: olist_dashboard,
+    photo: olist_photo,
   },
   {
     title: "Food Detection and Nutrition Calculator Application",
@@ -77,6 +99,7 @@ const projects = [
     tag: "Machine Learning",
     tech: ["Python", "Tensorflow"],
     link: "https://www.canva.com/design/DAF5c_V7JuM/aexO7xfGBG8Cfn3mHUv-WQ/view?utm_content=DAF5c_V7JuM&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+    photo: FONA,
   },
   {
     title: "Web Based Application Wind Turbine Damage Detection",
@@ -85,6 +108,7 @@ const projects = [
     tag: "Machine Learning",
     tech: ["React", "Typescript", "Express", "Python", "Tensorflow"],
     link: "https://itbdsti-my.sharepoint.com/:p:/g/personal/13620059_mahasiswa_itb_ac_id/EX1GYWtQGstNt-7neDTdjg0Bh6iDaJA1HVOYOBBSvbNTCQ?e=qT6VCf",
+    photo: turbiscan,
   },
   {
     title: "Chatbot Application for Helping Covid-19 Patients",
@@ -93,6 +117,7 @@ const projects = [
     tag: "Machine Learning",
     tech: ["React", "Express", "Twilio", "Mongodb"],
     link: "https://www.canva.com/design/DAEvW0rgfrg/hJslN38m12A4wAOcxVmhNA/view?utm_content=DAEvW0rgfrg&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+    photo: kebal,
   },
   {
     title: "Flight Delay Dashboard in US",
@@ -101,6 +126,7 @@ const projects = [
     tag: "Data",
     tech: ["Tableau"],
     link: "https://public.tableau.com/shared/2T5TF9MK3?:display_count=n&:origin=viz_share_link",
+    photo: flight_delay,
   },
   {
     title: "HR Analytics Dashboard",
@@ -109,6 +135,7 @@ const projects = [
     tag: "Data",
     tech: ["PowerBI"],
     link: hr_analytics,
+    photo: hr_analytics_p,
   },
   {
     title: "Data Professional Survey Dashboard",
@@ -117,6 +144,7 @@ const projects = [
     tag: "Data",
     tech: ["PowerBI"],
     link: data_professional_survey,
+    photo: data_prof,
   },
   {
     title: "Fandango Movie Rating Discrepancy Analysis",
@@ -125,6 +153,7 @@ const projects = [
     tag: "Data",
     tech: ["Python"],
     link: "https://github.com/gasous30/fandango-data-analysis/blob/main/Capstone-Project%20FINISHED.ipynb",
+    photo: fandango,
   },
   {
     title: "Aircraft Departure and Arrival Analysis",
@@ -132,7 +161,8 @@ const projects = [
       "A Python tool plots flight paths on Google Maps and retrieves airport satellite photos.",
     tag: "Data",
     tech: ["Python", "Selenium"],
-    link: "https://github.com/gasous30/flight_data_analysis/blob/main/flight_data_analysis_renew.ipynb",
+    link: "https://docs.google.com/presentation/d/14XuVrK6ZXkowS8lLziw1yAxRG7QTWPR297jYRcMSfmY/edit?usp=sharing",
+    photo: aircraft_flight_sds,
   },
   {
     title: "Titanic Data Analysis",
@@ -141,6 +171,7 @@ const projects = [
     tag: "Data",
     tech: ["Python", "Scikitlearn"],
     link: "https://github.com/gasous30/titanic-kaggle-machineLearning/blob/main/titanic-kaggle-machineLearning.ipynb",
+    photo: titanic,
   },
   {
     title:
@@ -150,15 +181,16 @@ const projects = [
     tag: "Engineering",
     tech: ["Matlab", "Simulink"],
     link: "https://digilib.itb.ac.id/gdl/view/81873/13620059?rows=1&per_page=2",
+    photo: HILS,
   },
-  {
-    title:
-      "Design of Racing UAV for Kontes Robot Terbang Indonesia (KRTI) 2021",
-    description:
-      "Developed a racing UAV, analyzed its aerodynamic performance using XFLR5, and designed it with Solidworks and CorelDraw.",
-    tag: "Engineering",
-    tech: ["XFLR5", "Coreldraw", "Solidworks"],
-  },
+  // {
+  //   title:
+  //     "Design of Racing UAV for Kontes Robot Terbang Indonesia (KRTI) 2021",
+  //   description:
+  //     "Developed a racing UAV, analyzed its aerodynamic performance using XFLR5, and designed it with Solidworks and CorelDraw.",
+  //   tag: "Engineering",
+  //   tech: ["XFLR5", "Coreldraw", "Solidworks"],
+  // },
   {
     title:
       "Differential Evolution and DATCOM Implementation to Enhance Airframe Design Longitudinal Stability",
@@ -167,6 +199,7 @@ const projects = [
     tag: "Machine Learning",
     tech: ["Matlab", "DATCOM"],
     link: "https://ieeexplore.ieee.org/document/10329909",
+    photo: DE_ML,
   },
   {
     title:
@@ -176,6 +209,7 @@ const projects = [
     tag: "Engineering",
     tech: ["Matlab", "Simulink"],
     link: "https://ieeexplore.ieee.org/document/10329891",
+    photo: rocket_paper,
   },
   {
     title:
@@ -185,6 +219,7 @@ const projects = [
     tag: "Engineering",
     tech: ["Matlab"],
     link: "https://www.canva.com/design/DAFwCZHN2PA/-6-928qEBOy9AoSXFVJ1HQ/view?utm_content=DAFwCZHN2PA&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+    photo: vst_optimization,
   },
   {
     title:
@@ -194,6 +229,7 @@ const projects = [
     tag: "Engineering",
     tech: ["Abacus"],
     link: "https://www.canva.com/design/DAFjQ_WMAzc/bvr3mk-QsebIfjppFtOmtA/view?utm_content=DAFjQ_WMAzc&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+    photo: static_load,
   },
   {
     title: "Conceptual Design of Urban Air Mobility (UAM) Aircraft",
@@ -202,6 +238,7 @@ const projects = [
     tag: "Engineering",
     tech: ["Matlab", "Excel", "Solidworks", "DATCOM"],
     link: "https://www.canva.com/design/DAF2TY5GQeI/75SRwO4EvqIeMfGJXrNw9Q/view?utm_content=DAF2TY5GQeI&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+    photo: dpu,
   },
 ];
 
