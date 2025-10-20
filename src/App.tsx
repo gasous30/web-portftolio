@@ -15,6 +15,7 @@ import Achievement from "./components/Achievement";
 import Certification from "./components/Certification";
 import Teladan from "./components/TELADAN";
 import PPProg from "./components/PPProg";
+import Courses from "./components/Courses";
 
 const Root = () => {
   return (
@@ -23,6 +24,7 @@ const Root = () => {
       <Projects />
       <Certification />
       <Education />
+      <Courses />
       <WorkExp />
       <OrgExp />
       <Achievement />

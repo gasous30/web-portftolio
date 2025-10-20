@@ -38,7 +38,7 @@ const About = () => {
           Hi, I am {about.name}.
         </Heading>
         <Heading as={"h2"} size={"xl"}>
-          A data enthusiast.
+          spacecraft control and data enthusiast 
         </Heading>
         <Text textAlign={"left"} maxW={"70%"}>
           {about.description}

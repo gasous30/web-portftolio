@@ -16,8 +16,8 @@ export interface CertContainerModel {
   subtitle: string;
   issued: string;
   expired?: string;
-  credID: string;
-  credLink: string;
+  credID?: string;
+  credLink?: string;
   description: string;
 }
 
@@ -42,10 +42,11 @@ const CertContainer = (props: CertContainerProps) => {
       <Text textAlign={"left"} w={"80%"}>
         {modelData.description}
       </Text>
-      <Text textAlign={"left"} w={"80%"} fontWeight={800}>
+      {modelData.credID ? <Text textAlign={"left"} w={"80%"} fontWeight={800}>
         Credential ID: {modelData.credID}
-      </Text>
-      <Button
+      </Text> : null}
+      
+      {modelData.credLink ? <Button
         rightIcon={<ExternalLinkIcon />}
         w={"15%"}
         as={"a"}
@@ -53,7 +54,7 @@ const CertContainer = (props: CertContainerProps) => {
         href={modelData.credLink}
       >
         Show credential
-      </Button>
+      </Button> : null}
     </Flex>
   );
 };

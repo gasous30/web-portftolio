@@ -222,7 +222,7 @@ const ProjectContainer = (props: ProjectContainer) => {
       transition={"transform .2s"}
       _hover={{ transform: "scale(1.05)" }}
       onClick={() =>
-        window.open(data.link ? data.link : "projects/" + data.title)
+        window.open(data.link ? data.link : data.photo)
       }
       alignItems={"center"}
     >
@@ -287,7 +287,7 @@ const ProjectContainer = (props: ProjectContainer) => {
 };
 
 const Projects = () => {
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [selectedTag, setSelectedTag] = useState<string | null>("engineering");
 
   projects.sort((a, b) => (a.tag < b.tag ? -1 : 1));
 

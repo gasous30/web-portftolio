@@ -21,11 +21,13 @@ import rocket_paper from "./assets/projectImages/rocket_paper.png";
 import static_load from "./assets/projectImages/static_load.png";
 import turbiscan from "./assets/projectImages/turbiscan.png";
 import vst_optimization from "./assets/projectImages/vst_optimization.png";
+import posdet_run from "./assets/projectImages/posdet_run.png";
+import attitude_run from "./assets/projectImages/attitude_run.png";
 
 const about = {
   name: "Octavianus Bagaswara Adi",
   description:
-    "As a graduate from Aerospace Engineering at Institut Teknologi Bandung, my journey has been marked by a commitment to intertwining technical expertise with societal impact. The recent completion of a project at Bangkit Academy, earning a spot in the top 50 out of 639, highlighted my ability to leverage machine learning tools like TensorFlow to create meaningful solutions. In parallel, my tenure as Vice President at TSA ITB was defined by empowering teams to deliver social projects that resonate with the Sustainable Development Goals; a testament to my leadership and dedication to driving positive change. Our collaboration with the Tanoto Foundation was fundamental in steering successful initiatives, showcasing my capabilities in project management and social responsibility.",
+    "As a graduate from Aerospace Engineering at Institut Teknologi Bandung, my journey has been marked by a commitment to intertwining technical expertise with societal impact. At present, I work as a Satellite Bus & Flight Dynamics Engineer, where I am responsible for analyzing and supporting the operations of two GEO satellites—focusing on orbit analysis, flight dynamics, and bus system performance to ensure mission success.",
   resume: "",
   social: {
     linkedin: "https://www.linkedin.com/in/octavianusbagas/",
@@ -36,14 +38,20 @@ const about = {
 
 const education = [
   {
-    title: "Bachelor of Engineering in Aerospace Engineering",
+    title: "Bachelor of Science (B.Sc) in Aerospace Engineering",
     subtitle: "Institut Teknologi Bandung, Indonesia",
     description: [
-      "Published 1 article at Jurnal Kewarganegaraan and 2 conference papers at the IEEE International Conference on Aerospace Electronics and Remote Sensing Technology (ICARES).",
+      "Published 'Analysis of Hardware-in-the-Loop Simulation (HILS) on Thrust Vectoring Control Design for a Ducted Fan UAV' (https://doi.org/10.1007/978-981-96-1344-1_41) at Proceedings of the 10th International Seminar on Aerospace Science and Technology; ISAST 2024; 17 September, Bali, Indonesia (pp.382-391)",
+      "Published 'Robust Controller Design for Planar Rocket with Thrust Vectoring Control' (https://doi.org/10.1109/ICARES60489.2023.10329891) at 2023 IEEE International Conference on Aerospace Electronics and Remote Sensing Technology (ICARES)",
+      "Published 'Differential Evolution and DATCOM Implementation to Enhance Airframe Design Longitudinal Stability' (https://doi.org/10.1109/ICARES60489.2023.10329909) at 2023 IEEE International Conference on Aerospace Electronics and Remote Sensing Technology (ICARES)",
+      "Published 'Kajian Validitas Klaim China atas Wilayah Laut China Selatan Indonesia' (https://doi.org/10.31316/jk.v5i2.1986) at Jurnal Kewarganegaraan",
       "Learn about design, construction, and science of aircraft and spacecraft.",
     ],
-    year: "2020 - 2024 (expected)",
+    year: "2020 - 2024",
   },
+];
+
+const courses = [
   {
     title: "Hanyang International Winter School",
     subtitle: "Hanyang University",
@@ -62,7 +70,7 @@ const education = [
     ],
     year: "2023 - 2024",
   },
-];
+]
 
 const projects = [
   {
@@ -175,6 +183,24 @@ const projects = [
   },
   {
     title:
+      "Attitude Determination using EKF on LEO Satellite Platform focusing for Earth Observation Mission",
+    description:
+      "A Python-based program was designed using EKF for a LEO small satellite, fusioning common sensors such as star tracker, sun sensor, gyroscope, and magnetometer.",
+    tag: "Engineering",
+    tech: ["Python"],
+    photo: attitude_run,
+  },
+  {
+    title:
+      "Orbit Determination using EKF and RLS on LEO Satellite Platform focusing for Earth Observation Mission",
+    description:
+      "A Python-based program was designed using EKF and RLS for a LEO small satellite using GNSS as sensor and SGP4 and Cowell's Method (RK4) as the propagator.",
+    tag: "Engineering",
+    tech: ["Python"],
+    photo: posdet_run,
+  },
+  {
+    title:
       "Hardware-In-The-Loop Simulation Analysis on Thrust Vectoring Control Design for Ducted Fan UAV",
     description:
       "A MATLAB-based tool was designed and implemented using HILS for a TVC vehicle, introducing a new approach to flight control system design.",
@@ -183,14 +209,6 @@ const projects = [
     link: "https://digilib.itb.ac.id/gdl/view/81873/13620059?rows=1&per_page=2",
     photo: HILS,
   },
-  // {
-  //   title:
-  //     "Design of Racing UAV for Kontes Robot Terbang Indonesia (KRTI) 2021",
-  //   description:
-  //     "Developed a racing UAV, analyzed its aerodynamic performance using XFLR5, and designed it with Solidworks and CorelDraw.",
-  //   tag: "Engineering",
-  //   tech: ["XFLR5", "Coreldraw", "Solidworks"],
-  // },
   {
     title:
       "Differential Evolution and DATCOM Implementation to Enhance Airframe Design Longitudinal Stability",
@@ -244,17 +262,20 @@ const projects = [
 
 const workExperience = [
   {
-    title: "Front End Web Developer",
-    subtitle: "Internnet Indonesia",
+    title: "Satellite Bus and Flight Dynamics Engineer Staff",
+    subtitle: "Pasifik Satelit Nusantara, Indonesia",
     description: [
-      "Developed websites for Internnet Indonesia Wave 5 using the Next framework.",
-      "Developed content management system website for Internnet Indonesia by using Vite framework.",
+      "Analyzed 3 GEO satellite bus systems, including power, thermal, attitude control, and data handling, subsystems, ensuring optimal performance throughout mission life cycle.",
+      "Supported satellite flight operations by analyzing telemetry, assessing orbit status, and recommending corrective maneuvers.",
+      "Performed orbit determination and maneuver planning to support mission planning and operations.",
+      "Performed collocation simulation to support smooth mission operations.",
+      "Collaborated cross-functionally with payload, ground station, and real-time system teams to ensure full satellite system integration."
     ],
-    year: "Nov 2021 - Oct 2023",
+    year: "Oct 2024 - Present",
   },
   {
     title: "On the Job Training Aerodynamics Engineer",
-    subtitle: "PT Dirgantara Indonesia",
+    subtitle: "PT Dirgantara Indonesia (Indonesia Aerospace)",
     description: [
       "Analyzed several aerodynamic software tools, including VSPAERO and ANSYS Fluent, to calculate the lift and drag forces on a wing",
       "Assessed the strengths and limitations of VSPAERO and ANSYS Fluent in estimating lift and drag forces, providing valuable insights into their performance and applicability",
@@ -352,6 +373,29 @@ const achievement = [
 
 const certification = [
   {
+    title: "GRE General Test",
+    subtitle: "ETS",
+    issued: "Oct 2025",
+    expired: "Oct 2030",
+    description:
+      "",
+  },
+  {
+    title: "TOEFL iBT (99/120)",
+    subtitle: "ETS",
+    issued: "Sep 2025",
+    expired: "Sep 2027",
+    description:
+      "",
+  },
+  {
+    title: "Level 3: STK Grand Master Certification",
+    subtitle: "Ansys STK",
+    issued: "May 2025",
+    description:
+      "This certificate demonstrates advanced expertise in Systems Tool Kit (STK), including proficiency in complex mission modeling, automation, and multi-domain analysis.",
+  },
+  {
     title: "TensorFlow Developer Certificate",
     subtitle: "TensorFlow Certificate Program",
     issued: "Mar 2024",
@@ -376,6 +420,7 @@ export {
   about,
   education,
   projects,
+  courses,
   workExperience,
   orgExperience,
   achievement,
